@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    scroll-behavior: smooth;
+    width: 100%;
+    position: relative;
+}
+/*tongquan*/
+.n-header{
+    display: inline-flex;
+    height: 50px;
+    width: 100%;
+    padding-top: 10px;
+}
+.l-header{
+width: 23.33%;
+ display: flex;
+ justify-content: flex-start;
+}
+.centre-header{
+    width: 53.33%;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+
+}
+.right-header{
+    width: 23.33%;
+display: flex;
+justify-content: space-evenly;
+margin-top: -5px;
+
+}
+.right-header>.ti{
+    border: 10px solid rgba(121, 119, 119, 0.144);
+    border-radius:100%;
+}
+.ti{
+    color: rgb(102, 103, 104);
+    font-size: 25px;
+}
+.search-h button{
+    width: 300px;
+    border: 2px;
+    border-radius: 30px;
+    height: 35px;
+}
+.ti-search{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-top: 6px;
+}
+.search-h button{
+margin-left: 15px;
+}
+.ti-search p{
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+#cylindrical{
+    display: flex;
+    background-color: #f0f2f5;
+}
+.left-body{
+width: 20%;
+height:3000px;
+background-color: #f0f2f5;
+margin-left: 20px;
+}
+.ct-body{
+width: 60%;
+height: 50px;
+background-color: #f0f2f5;
+}
+.right-body{
+width: 20%;
+height: 50px;
+background-color: #f0f2f5;
+}
+.item{
+    height: 50px;
+}
+.item {
+    position: relative;
+        overflow: hidden;
+}
+.item
+{
+    position: relative;
+}
+ p{
+   position: absolute;
+   top:17px;
+   left: 60px;
+
+}
+.it2 img{
+    margin-top:-55px;
+}
+.it3 img{
+    margin-top:-105px;
+}
+.it3 img{
+    margin-top:-160px;
+}
+.it4 img{
+    margin-top:-210px;
+}
+.it5 img{
+    margin-top:-260px;
+}
+.it6 img{
+    margin-top:-310px;
+}
+.it7 img{
+    margin-top:-360px;
+}
+.it8 img{
+    margin-top:-410px;
+}
+.it9 img{
+    margin-top:-460px;
+}
+.it10 img{
+    margin-top:-510px;
+}
+.it11 img{
+    margin-top:-560px;
+}

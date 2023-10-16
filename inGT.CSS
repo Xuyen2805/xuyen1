@@ -1,0 +1,357 @@
+/** gốc*/
+
+/*banner*/
+#main-htr{
+    margin: 100px 90px 0 90px;
+}
+#banner{
+    position: relative;
+}
+#banner img{
+    width: 100%;
+}
+@keyframes banner {
+    0% { filter: brightness(220%); }
+    50% { filter: brightness(0%); }
+    100% { filter: brightness(120%); }
+  }
+  
+  .banner {
+    animation: banner 5s infinite;
+  }
+.h1{
+    display: flex;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.637);
+    top:25vw;
+    left: 10vw;
+    font-size: 5vw;
+    font-family: 'Orbitron', sans-serif;
+}
+#content{
+    position: relative;
+}
+.text-content {
+position: absolute;
+top:0;
+left: 52%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.map{
+    width: 50%;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.514);
+
+}
+.text-content p{
+    width: 100%;
+    margin-top: 20px;
+    line-height: 2;
+}
+#table-htr h1{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+#table-text{
+    position: relative;
+}
+.struc{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+}
+.struc img{
+    width: 70px;
+    padding: 50px 0;
+    display: flex;
+    margin: 0 50%;
+}
+.tana img{
+    width:100px;
+    margin-top: -40px;
+}
+.colum p{
+    height:100%;
+    width: 5px;
+    background-color: rgb(243, 172, 79);
+    position: absolute;
+    margin-top: 29px;
+    left: calc(50% + 32px);
+    top: 70px;
+    z-index: -1;
+}
+.time-A{
+    width: 53%;
+}
+
+.text-htr{
+    display: flex;
+}
+.time-a{
+    display: flex;
+    padding: 200px 0;
+}
+.time-a h1{
+    margin-top: 0 !important;
+    color: chocolate !important;
+}
+.time-b h1{
+    margin-top: 0 !important;
+    color: chocolate !important;
+}
+.time-B{
+    width: 47%;
+    z-index: 1;
+    position: absolute;
+    margin-left: 44.5%;
+    margin-top: 240px;
+
+}
+.time-b{
+    display: flex;   
+    flex-direction: row-reverse;
+    padding: 200px 0;   
+
+}
+.building{
+    display:flex;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+}
+.item{
+    width:30%;
+    border-radius: 8px;
+    background-color: #dbebfff8;
+    margin: 20px;
+    justify-content: space-between;
+}
+.item img{
+    width: 100%;
+    max-height: 300px;
+    min-height: 220px;
+    border-radius: 8px;
+}
+.item h2{
+    padding: 15px 0;
+    color: #FFC600;
+}
+.text-built{
+    margin: 0 30px ;
+}
+.item p{
+    color:rgb(0, 0, 0);
+    padding-bottom: 20px;
+}
+
+.Built{
+    padding-top: 100px;
+}
+.h5{
+    color: #FFC600;
+    padding: 15px 0px;
+}
+
+/*ipad*/
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    #Header{
+        background-color:#414c68 !important ;
+    }
+    #headeradd .Sign-in{
+        display: none;
+        width: 100%;
+    }
+    #ptr-icon {
+        left: 0 !important;
+    }
+    .text-htr{
+        display: block;
+    }
+    .building{
+        justify-content: center;
+    }
+    /*lich su*/
+    #main-htr {
+        margin: 100px 40px 0 40px !important;
+        text-align:justify;
+    }
+    .time-A{
+        width: 100%;
+    }
+    .time-B{
+        position:relative;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .tana{
+        display: none;
+    }
+    .time-a{
+        display: flex;   
+    flex-direction: row-reverse;
+    padding:0;  
+    }
+    .time-b{
+        display: flex;   
+    flex-direction: row-reverse;
+    padding: 0;  
+    }
+    .time-a p{
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+    .time-b p{
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+    #headeradd{
+        margin-left: 217px;
+        width: 100%;
+    }
+    #headeradd li:not(:last-child) {
+        max-width: 100% !important;
+    }
+    .Built{
+        padding-top: 30px;
+    }
+    .item{
+        width:43%;}
+
+}
+@media (max-width: 560px) {
+    .text-htr {
+        display: inline;
+    }
+    html {
+        font-size: 18px;
+      } 
+        #main{
+          width: 560px;
+        }
+        #Method{
+          margin: 0px;
+        }
+        .test{ 
+          display: inline;
+        }
+        .picture{
+          width: 100%;
+          margin-top: 20px;
+      }
+      .text1 h1{
+        width: 100%;
+      }
+      #headeradd li:last-child{
+        display: none;
+      }
+      #ptr-icon{
+        padding-right: 85%;
+        background-color: #414c68;
+        width: 100% !important;
+        left: 0;
+    
+      }
+      #Header{
+        z-index: 2;
+      }
+    #headeradd * {
+      display:block;
+      left: 0px;
+    }
+      #headeradd li:not(:last-child) {
+    max-width:100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.473);
+      }
+      #headeradd{
+        transform: translate(-0%, -0%);
+        left: 0;
+        top:70px;
+        width: 100%;
+        display: none;
+      }
+    
+    #headeradd >li{
+        background-color: rgb(254, 255, 255);
+        padding-left: 40px;
+        width: 100%;
+        margin-top: 2px;
+        
+    }
+    #headeradd >li>a{
+    color: #414c68;
+    width: 100%;
+    font-size:  20px;
+    }
+    #main-htr{
+        margin: 50px 30px 0 30px;
+    }
+    .text-content {
+        position: relative;
+        left: 0;
+        text-align: justify;
+    }
+    #table-htr h1 {
+        margin-top: 30px;}
+    .text-content h2{
+        margin-top: 25px;
+    }
+    .time-A{
+        width: 100%;
+    }
+    .time-B{
+        position:relative;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .tana{
+        display: none;
+    }
+    .time-a{
+        display: flex;   
+    flex-direction: row-reverse;
+    padding:0;  
+    margin-top: 20px;
+    }
+    .time-b{
+        display: flex;   
+    flex-direction: row-reverse;
+    padding: 0; 
+    margin-top: 20px;
+    }
+    .time-a p{
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .time-b p{
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    #headeradd{
+        width: 100%;
+    }
+    #headeradd li:not(:last-child) {
+        max-width: 100% !important;
+    }
+    .item{
+        width:100%;}
+    .Built {
+
+        padding-top: 65px;
+    }
+    .map {
+        width: 100%;}
+    .time-a p {
+        margin-top: 5px;
+    }
+    .time-b p {
+        margin-top: 5px;
+    }
+
+   
+}

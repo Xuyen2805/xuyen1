@@ -1,0 +1,271 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    scroll-behavior: smooth;
+    width: 100%;
+    position: relative;
+}
+:root{
+    --test-color: white;
+    --background :rgb(190, 12, 12);
+    --font-size: 15px;
+    --font-h1:20px;
+    --background-blue:rgb(44, 137, 224);
+    
+}
+#Header{
+    width: 100%;
+    background-color:var(--background) ;
+    position: absolute;
+    height: 70px;
+    background-color: var(--background);
+    position: sticky;
+    top:0;    
+    z-index: 1;
+}
+/**header**/
+#Header{
+    background-color:rgb(65 76 104) ;
+}
+#headeradd {
+    position: absolute;
+ }
+/**banner*/
+#banner{
+    background-color: #7116e7;
+    width: 100%;
+    height: 40vw;
+    position: relative;
+    overflow: hidden;
+}
+.image-container img{
+    width: 25vw;
+    border-radius: 15px;
+    border:5px solid #ffffff;
+    margin: 5px;
+    height: 15vw;
+}
+.image-container >img :hover{
+    width:calc(25vw + 3vw);
+    height: calc(15vw + 3vw);
+}
+#image-row{
+    display: flex;
+    justify-content: center;
+}
+#photo {
+    /* Chỉnh vị trí của container nếu muốn ảnh xoay quanh điểm nào đó */
+    /* Ở đây, dùng `50% 50%` để xoay quanh tâm của container */
+    transform-origin: 50% 50%;
+    
+    /* Xoay container 30 độ */
+    transform: rotate(317deg);
+    overflow: hidden;
+    position: absolute;
+    right:-270px;
+  }
+
+/**content*/
+#content{
+    height: 40vw;
+}
+.long-pts{
+    height: 100%;
+    object-fit: cover;
+    width:100% ;
+}
+.icon-text *{
+color: white;
+margin: 10px 35px;
+
+}
+.icon-text img{
+    width: 70px;
+}
+#fb{
+    background-color:rgb(113 22 231);
+    display: flex;
+    justify-content: center;
+}
+/** footer*/
+#footer{
+    height: 60vw;
+}
+#contact{
+    justify-content: center;  
+    padding-top: 20vw ;
+    margin-bottom: 10vw ;
+    margin-left: 0px;
+  }
+  #contact h4{
+    width: 230px;
+  }
+  #contact p{
+    margin: 0;
+    max-width: 500px;
+  }
+  #text-intro h1, p{
+    position: relative;
+  }
+  .list2ct, .list1ct{
+    padding-left: 20px;
+  }
+  #text-intro p {
+    top:10vw;
+  }
+  @media (min-width: 601px) and (max-width: 1024px)  {
+    .icon-text img{
+        width: 6vw;
+    }
+    .icon-text h1{
+font-size: 3vw;
+    }
+    .icon-text h4{
+font-size: 1.5vw;
+    }
+}
+/*intro*/
+#text-intro h1 ,p {
+    display: flex;
+    color: #ffffff;
+}
+#text-intro h1{
+    
+    font-size:4vw;
+    top:8vw;
+    left: 5vw;
+}
+#text-intro p{
+width: 35vw;
+justify-content: center;
+font-size:1vw;
+    top:10vw ;
+    left:5vw;
+    line-height:2vw;
+}
+
+
+
+
+
+/**banner điện thoại*/
+
+@media (max-width: 560px) {
+    #Header{
+        background-color:rgb(65 76 104) !important ;
+    }
+    #headeradd .Sign-in{
+        display: none;
+    }
+    #banner{
+        background-color: #7116e7;
+        width: 100%;
+        height: 70vw;
+    }
+    #ptr-icon {
+        left: 0 !important;
+    }
+    #photo{
+       right: -35vw;
+       transform: rotate(331deg); 
+    }
+    .image-container img{
+        width: 35vw;
+        border-radius: 5px;
+        border:2px solid #ffffff;
+        margin: 5px;
+        height: 20vw;
+    }
+    #text-intro p{
+        width: 45vw;
+        justify-content: center;
+        font-size:3vw;
+            top:16vw;
+            left:5vw;
+            line-height:4vw;
+        }
+        #text-intro h1{
+            font-size:8vw;
+            top:5vw;
+            left: 5vw;
+        }
+        .icon-text img {
+            width: 50px;   
+}
+#fb {
+    background-color: rgb(0, 119, 255);
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+#footer{
+    height: 1600px !important;
+  }
+  .list2ct, .list1ct{
+    display: block;
+    margin-top: 2vw;
+  }
+  .logo-pic{
+    height: 40vw;
+    left: 2vw;
+  }
+  #contact{
+   padding-top: 45vw !important;
+   margin-left: 10vw !important;
+   display: grid !important;
+  grid-template-columns: 1fr; 
+  }
+  .text-logo{
+    top:20vw;
+    left: 45vw;
+    font-size: 25px;
+  }
+  .text-mix{
+    top:35vw;
+    left: 10vw;
+    font-size: 8vw;
+  }
+  #contact p{
+    font-family:Arial, Helvetica, sans-serif;
+    min-width: 450px;
+    font-size: 4vw;
+    text-align: justify;
+
+  }
+  #text-intro h1, p {
+     display:block !important; 
+    position: relative !important;
+}
+#contact p {
+     margin: 10px; 
+     max-width:400px !important; 
+     line-height: 1; 
+}
+#text-intro p {
+    width: 60vw;
+    justify-content: center;
+}
+}
+/**ipad min*/
+@media (min-width: 601px) and (max-width: 1024px) {
+    #headeradd{
+        transform: translate(0%, -0%) !important;
+        left: 0 !important;
+        top: 70px !important;
+        width: 100% !important;
+       }
+    #headeradd li:not(:last-child) {
+        max-width: 100% !important;
+        
+            }
+    #Header{
+        background-color: rgb(65 76 104) !important;
+    }
+}

@@ -1,0 +1,365 @@
+ /**header gốc */
+ *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  scroll-behavior: smooth;
+  width: 100%;
+  position: relative;
+}
+:root{
+  --test-color: white;
+  --background :rgb(190, 12, 12);
+  --font-size: 15px;
+  --font-h1:20px;
+  --background-blue:rgb(14, 49, 90);
+  
+}
+#Header{
+  width: 100%;
+  background-color:var(--background) ;
+  position: absolute;
+  height: 70px;
+  background-color: var(--background);
+  position: sticky;
+  top:0;
+  z-index: 2;
+  
+}
+/**header**/
+#headeradd {
+  position: absolute;
+  left: 60%;
+  top:25px;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+#headeradd * {
+  text-decoration-line: none;
+  list-style-type: none;
+  display: inline;
+}
+#headeradd li:not(:last-child){
+  padding:20px ;
+  max-width: 40px;
+}
+#headeradd >li>a{
+  color: white;
+}
+.Sign-in >a{
+  padding: 10px;
+  color: white;
+}
+#ptr-icon{
+  width: 70px;
+  height: 70px;
+  display: flex;
+  top:0px; 
+  position: sticky;
+  left: 15%;
+
+}
+/**footer gốc*/
+#footer{
+  background-color: #333;
+  position: relative;
+  height: 800px;
+      z-index: -1;
+}
+.logo-pic{
+  position: absolute;
+  height: 15vw;
+  display: flex;
+  left: 20vw;
+  top:3vw
+}
+.text-logo{
+  position: absolute;
+  top:10vw;
+  left: 35vw;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#logo{
+  color: white;
+  width: 20vw;
+}
+.text-mix{
+  position: absolute;
+  top:15vw;
+  left: 22vw;
+  font-size: 2vw;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#contact h4{
+  color: white;
+  margin-top: 10px;
+  font-size: calc(2vw+5px);
+}
+#contact p{
+  color: white;
+  margin: 10px;
+  max-width: 400px;
+  max-height: 700px;
+}
+#contact{
+  margin-left: 45vw;  
+  display: flex;
+  padding-top: 10vw;
+  margin-bottom: 10vw;
+}
+.list2ct, .list1ct{
+  display:inline;
+}
+.Sign-in a{
+  text-decoration-line: none;
+  padding: 10px 25px 10px 10px;
+  font-size: 17px;
+}
+.search-menu{
+  border-radius:36px ;
+  padding: 6px 15px;
+  border-color: #46e8ee;
+}
+.Sign-in button{
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 10px;
+  background-color:#46e8ee91;
+  border: none;
+  color:var(--test-color);
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 5px 15px;
+  border: 1px;
+  border: solid;
+border-color:#46e8ee;
+
+}
+
+
+
+/**ipad max*/
+@media (min-width: 601px) and (max-width: 1024px) {
+/*header*/ 
+
+  #ptr-icon{
+    padding: 0 70px 0 60px;
+    background-color: #414c68;
+    width: 203px;
+    left: 0;
+  }
+  #headeradd li:not(:last-child) {
+max-width: 320px;
+  }
+#Header{
+z-index: 2;
+}
+#headeradd >li{
+    background-color: rgb(14, 49, 90);
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: rgba(255, 255, 255, 0.425) solid 1px;
+}
+#headeradd li:last-child{
+display: none;
+}
+#headeradd{
+left:90px;
+top:242px;
+box-shadow:  0 2px 4px rgba(5, 5, 5, 0.623);
+display: none;
+}
+#headeradd * {
+display:block;
+left: 0px;
+}
+#headeradd >li>a{
+padding: 0 30px 0 20px;
+width: 185px;
+}
+
+}
+
+
+
+
+/* ddien thoai*/
+
+@media (max-width: 560px) {
+  /* Đặt CSS cho smartphone với chiều ngang tối đa là 360px */
+html {
+  font-size: 18px;
+} 
+  #main{
+    width: 560px;
+  }
+  #Header{
+    z-index: 2;
+  }
+#headeradd * {
+  display:block;
+  left: 0px;
+}
+  #headeradd li:not(:last-child) {
+max-width:100%;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.473);
+  }
+  #headeradd{
+    transform: translate(-0%, -0%);
+    left: 0;
+    top:70px;
+    width: 100%;
+    display: none;
+  }
+
+#headeradd >li{
+    background-color: rgb(254, 255, 255);
+    padding-left: 40px;
+    width: 100%;
+    margin-top: 2px;
+    
+}
+#headeradd >li>a{
+color: #414c68;
+width: 100%;
+font-size:  20px;
+}
+/*footer*/
+#footer{
+  height: 1600px ;
+}
+.list2ct, .list1ct{
+  display: block;
+  margin-top: 2vw;
+}
+.logo-pic{
+  height: 40vw;
+  left: 2vw;
+}
+#contact{
+ padding-top: 45vw ;
+ margin-left: 10vw ;
+ display: grid ;
+grid-template-columns: 1fr; 
+
+}
+.text-logo{
+  top:20vw;
+  left: 45vw;
+  font-size: 25px;
+}
+.text-mix{
+  top:35vw;
+  left: 10vw;
+  font-size: 8vw;
+}
+#contact p{
+  font-family:Arial, Helvetica, sans-serif;
+  min-width: 450px;
+  font-size: 4vw;
+  text-align: justify;
+
+}
+}
+
+
+
+
+/**ipad max*/
+@media (min-width: 1025px) and (max-width: 1615px) {
+  #Method{
+    margin:0;
+  }
+
+  #footer{
+    height: 950px;
+    z-index: -1;
+  }
+  #contact{
+    margin-left: 18vw;
+    padding-top: 20vw;
+  }
+}
+
+
+/**ipad min*/
+@media (min-width: 601px) and (max-width: 1024px) {
+    #ptr-icon{
+      padding: 0 70px 0 60px;
+      background-color: #414c68;
+      width: 203px;
+      left: 0;
+    }
+    #headeradd li:not(:last-child) {
+max-width: 320px;
+    }
+#Header{
+  z-index: 2;
+}
+#headeradd >li{
+      background-color: rgb(14, 49, 90);
+      display: flex;
+      flex-wrap: wrap;
+}
+#headeradd li:last-child{
+  display: none;
+}
+ #headeradd{
+  left:90px;
+  top:242px;
+  box-shadow:  0 2px 4px rgba(5, 5, 5, 0.623);
+  display: none;
+ }
+ #headeradd * {
+  display:block;
+  left: 0px;
+}
+ #headeradd >li>a{
+  padding: 0 30px 0 20px;
+  width: 185px;
+ }
+
+    .picture{
+        width: 100px;
+        display: none;
+    }
+    #Method{
+        margin: 0 10px 0 0px;
+        width: 100%;
+    }
+    .about-text {
+        display:flex;
+  }
+  .about-text li{
+    padding-top: 0px;
+  }
+  .ptr{
+    width: 150px;
+    height: 150px;
+  }
+  .pro>li{
+    width: 154px;
+    height: 230px;
+    margin: 20px;
+    margin-top: 20px;
+  }
+  .pro{
+    height: 300px;
+  }
+  .list-teacher *{
+    padding: 10px;
+  }
+#contact{
+  margin-left: 5vw !important;
+  padding-top: 20vw !important;
+}
+#footer{
+  height: 950px;
+}
+}

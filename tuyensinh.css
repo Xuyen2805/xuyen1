@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    scroll-behavior: smooth;
+    width: 100%;
+    position: relative;
+}
+#banner{
+    display: flex;
+    height: 900px;
+    flex-direction: row;
+    position: relative;
+}
+.left{
+    width: 19%;
+    height: 100%;
+    background-color: rgb(250, 246, 245);
+    padding-top: 20px;
+    padding-left: 20px;
+    overflow: auto;
+    position:absolute;
+    left: 0;
+    top:0px
+}
+.right{
+    width: 80%;
+    height: 900px;
+    background-color: rgb(254, 254, 255);
+    position: absolute;
+    right: 0;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+.h3{
+    padding-top: 20px;
+    color: #06941d;
+}
+.left h7{
+    font-size: 20px;
+    font-weight: bold;
+}
+.left p{
+    margin: 25px;
+}
+.top{
+    font-weight: bold;
+    color: #06941d;
+}
+.left a{
+    text-decoration: none;
+    color: rgb(19, 20, 20);
+}
+/* Định dạng bảng */
+.table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-top: 25px;
+    font-weight: bold;
+
+  }
+  .right{
+    padding: 0 10% 0 10%;
+  }
+  .header-top{
+    padding: 20px 0 40px 0;
+    color: #06941d;
+  }
+  .text{
+    font-size: 20px;
+  }
+  /* Định dạng hàng */
+  .row {
+    display: table-row;
+  }
+  
+  /* Định dạng ô */
+  .cell {
+    display: table-cell;
+    border: 1px solid #6b6767;
+    padding: 10px;
+    color: #06941d;
+  }
+.short{
+    width: 70%;
+}
+.long{
+    width: 30%;
+}
+.Centre .cell{
+    color:black ;
+    text-align: center;
+    background-color: #7c7979;
+}
+.box{
+    background-color: aliceblue;
+    border-left: 5px solid orange;
+    margin: 20px 0 20px 0;
+}
+.text{
+    margin-top: 10px;
+}
+.box a{
+    text-decoration: none;
+    color: black;
+}
+.box p{
+    padding: 10px;
+}
+.footer-row{
+    height: 50px;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+    .right {
+        padding: 0 2% 0 2%;
+        width: 70%;
+    }
+    .left{
+        width: 30%;
+    }
+    #headeradd{
+        transform: translate(0%, -0%) !important;
+        left: 0 !important;
+        top: 70px !important;
+        width: 100% !important;
+       }
+    #headeradd li:not(:last-child) {
+        max-width: 100% !important;
+        
+            }
+    #Header{
+        background-color: rgb(65 76 104) !important;
+    }
+}
+@media (max-width: 560px) 
+    /* Đặt CSS cho smartphone với chiều ngang tối đa là 360px */
+  {
+    #banner{
+        height: 275vw;
+    }
+    .left{
+        display: none;
+        width: 0;
+    }
+    .right{
+        width: 100%;
+        height: 100%;
+    }
+    #Header{
+        background-color:rgb(65 76 104) !important ;
+    }
+    #headeradd .Sign-in{
+        display: none;
+    }
+    #banner{
+        background-color: #7116e7;
+        width: 100%;
+        height: 70vw;
+    }
+    #ptr-icon {
+        left: 0 !important;
+    }
+    #photo{
+       right: -35vw;
+       transform: rotate(331deg); 
+    }
+    .image-container img{
+        width: 35vw;
+        border-radius: 5px;
+        border:2px solid #ffffff;
+        margin: 5px;
+        height: 20vw;
+    }
+    #text-intro p{
+        width: 45vw;
+        justify-content: center;
+        font-size:3vw;
+            top:16vw;
+            left:5vw;
+            line-height:4vw;
+        }
+        #text-intro h1{
+            font-size:8vw;
+            top:5vw;
+            left: 5vw;
+        }
+        .icon-text img {
+            width: 50px;   
+}
+  }
+  
+  
+  
+  
+  
